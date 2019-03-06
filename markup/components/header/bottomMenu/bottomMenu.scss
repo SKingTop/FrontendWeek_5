@@ -1,0 +1,122 @@
+.header_bottomMenuBackground {
+	width: 100%;
+	height: 55px;
+	background-color: $headerBottomMenuBackground;
+}
+.header_bottomMenu {
+	width: 1360px;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0px 30px;
+	margin: 0px auto;
+	// clear: both;
+	display: flex;
+	flex-direction: row;
+	&__dropdown {
+		width: 303px;
+		height: 100%;
+		background-color: $headerBottomMenuDropdown;
+		// float: left;
+		position: relative;
+		box-sizing: border-box;
+		padding-left: 72px;
+		cursor: pointer;
+		&__humbergerIco {
+			position: absolute;
+			top: 20px;
+			left: 30px;
+		}
+		&__text {
+			line-height: 55px;
+			color: $headerBottomMenuTextColor;
+			font-family: Proxima Nova Semibold, Arial, sans-serif;
+			font-size: 18px;
+			margin: 0px;
+		}
+		&__arrowIco {
+			position: absolute;
+			top: 26px;
+			right: 58px;
+		}
+	}
+	&__searchForm {
+		width: 772px;
+		height: 100%;
+		// float: left;
+		position: relative;
+		&__textArea {
+			outline: none;
+			width: 566px;
+			height: 38px;
+			font-size: 16px;
+			position: absolute;
+			top: 9px;
+			left: 15px;
+			border: none;
+			box-sizing: border-box;
+			padding-left: 55px;			
+		}
+		&__submitBtn {
+			outline: none;
+			width: 176px;
+			height: 38px;
+			font-size: 18px;
+			position: absolute;
+			top: 9px;
+			right: 15px;
+			cursor: pointer;
+			border: none;
+			background-color: $headerFormSubmitBtn;
+			font-family: Proxima Nova Bold, Arial, sans-serif;
+			color: $headerBottomMenuTextColor;
+			&:hover {
+				background-color: $headerFormSubmitBtnHover;
+			}
+		}
+		&__searchIco {
+			position: absolute;
+			top: 18px;
+			left: 38px;
+		}
+	}
+	&__basket {
+		width: 225px;
+		height: 100%;
+		display: block;
+		// float: left;
+		position: relative;
+		box-sizing: border-box;
+		padding-left: 99px;
+		cursor: pointer;
+		text-decoration: none;
+		&__bascetIco {
+			position: absolute;
+			top: 17px;
+			left: 53px;
+		}
+		&__text {
+			font-family: Proxima Nova Semibold, Arial, sans-serif;
+			color: $headerBottomMenuTextColor;		
+			line-height: 55px;
+			margin: 0px;
+			font-size: 18px;	
+		}
+		&:hover {
+			background-color: $headerBottomMenuBasketHover;
+		}
+		&__basketIndicator {
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			font-size: 14px;
+			font-family: Museo Sans Cyrl, Arial, sans-serif;
+			color: $headerBottomMenuTextColor;
+			line-height: 15px;
+			text-align: center;
+			background-color: $headerBottomMenuBasketIndicator;
+			top: 13px;
+			left: 68px;
+		}
+	}
+}

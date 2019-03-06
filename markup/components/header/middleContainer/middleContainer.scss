@@ -1,0 +1,84 @@
+.header_middleContainer {
+	width: 1360px;
+	height: 74px;
+	padding: 0px 30px;
+	box-sizing: border-box;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	&_item {
+		display: inline-block;
+		height: 100%;
+		&__logo {
+			width: 270px;
+			&__img {
+				margin-top: 7px;
+			}
+		}
+		&__time {
+			width: 285px;
+			box-sizing: border-box;
+			position: relative;
+			padding-left: 60px;
+			&__icon {
+				position: absolute;
+				top: 16px;
+				left: 5px;			
+			}
+			&__text {
+				margin: 0px;
+				margin-top: 22px;
+				color: $headerTopMenuTextColor;
+			}
+		}
+		&__map {
+			width: 285px;
+			box-sizing: border-box;
+			position: relative;
+			padding-left: 100px;
+			&__icon {
+				position: absolute;
+				top: 15px;
+				left: 62px;			
+			}
+			&__text {
+				margin: 0px;
+				margin-top: 30px;
+				color: $headerTopMenuTextColor;
+			}
+		}
+		&__email {
+			width: 285px;
+			box-sizing: border-box;
+			position: relative;
+			padding-left: 77px;
+			&__icon {
+				position: absolute;
+				top: 27px;
+				left: 21px;			
+			}
+			&__text {
+				margin: 0px;
+				margin-top: 30px;
+				color: $headerTopMenuTextColor;
+			}
+		}
+		&__phone {
+			width: 175px;
+			box-sizing: border-box;
+			position: relative;
+			padding-left: 55px;
+			&__icon {
+				position: absolute;
+				top: 23px;
+				left: 0px;			
+			}
+			&__text {
+				margin: 0px;
+				margin-top: 23px;
+				color: $headerTopMenuTextColor;
+				font-family: Proxima Nova Semibold, Arial, sans-serif;
+			}
+		}
+	}
+}
