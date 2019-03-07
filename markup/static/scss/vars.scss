@@ -1,9 +1,22 @@
+$header_blur: rgba(0,72,132,0.5);
+// ############# top Menu
 $headerTopMenuBackground: #f4f5f4;
 $headerTopMenuTextColor: #646464;
+// ############ botom Menu
 $headerBottomMenuBackground: #004884;
-$headerBottomMenuDropdown: #00953c;
-$headerFormSubmitBtn: #00ae46;
-$headerFormSubmitBtnHover: #008e46;
 $headerBottomMenuTextColor: #ffffff;
+// ############ botom Menu Dropdown
+$headerBottomMenuDropdown: #00953c;
+$headerBottomMenuDropdovnMenuBackground: #ffffff;
+$headerBottomMenuDropdovnMenuBackgroundHover: #e5ecf2;
+$headerBottomMenuDropdovnMenuText: #646464;
+$headerBottomMenuDropdovnMenuTextHover: #004884;
+// ############ botom Menu Search Form
+$headerSearchFormSubmitBtn: #00ae46;
+$headerSearchFormSubmitBtnHover: #008e46;
+$headerSearchFormNoResult: #ffffff;
+$headerSearchFormNoResultText: #646464;
+$headerSearchFormNoResultLink: #004884;
+// ############ botom Menu Basket
 $headerBottomMenuBasketHover: #003764;
 $headerBottomMenuBasketIndicator: #00ae46;

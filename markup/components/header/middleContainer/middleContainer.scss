@@ -26,6 +26,7 @@
 				left: 5px;			
 			}
 			&__text {
+				font-size: 16px;
 				margin: 0px;
 				margin-top: 22px;
 				color: $headerTopMenuTextColor;
@@ -42,6 +43,7 @@
 				left: 62px;			
 			}
 			&__text {
+				font-size: 16px;
 				margin: 0px;
 				margin-top: 30px;
 				color: $headerTopMenuTextColor;
@@ -58,9 +60,15 @@
 				left: 21px;			
 			}
 			&__text {
+				display: block;
+				font-size: 16px;
 				margin: 0px;
 				margin-top: 30px;
+				text-decoration: none;
 				color: $headerTopMenuTextColor;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 		&__phone {
@@ -74,6 +82,7 @@
 				left: 0px;			
 			}
 			&__text {
+				font-size: 16px;
 				margin: 0px;
 				margin-top: 23px;
 				color: $headerTopMenuTextColor;

@@ -2,6 +2,18 @@
 	width: 100%;
 	min-height: 170px;
 }
+.header_blur {
+	display: none;
+}
+.header_blur.active {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: $header_blur;
+}
 @import 'topMenu/topMenu.scss';
 @import 'middleContainer/middleContainer.scss';
 @import 'bottomMenu/bottomMenu.scss';

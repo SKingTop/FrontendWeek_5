@@ -9,6 +9,7 @@
 	margin: 0px auto;
 	padding: 0px 30px;
 	box-sizing: border-box;
+	font-size: 16px;
 	&__leftSide {
 		float: left;
 		&__item {
@@ -16,13 +17,11 @@
 			height: 100%;
 			margin-right: 39px;
 			text-align: center;
-			&__text {
-				line-height: 41px;
-				text-decoration: none;
-				color: $headerTopMenuTextColor;
-				&:hover {
-					text-decoration: underline;
-				}
+			line-height: 41px;
+			text-decoration: none;
+			color: $headerTopMenuTextColor;
+			&:hover {
+				text-decoration: underline;
 			}
 		}
 		.contacts {
@@ -35,28 +34,34 @@
 			display: inline-block;
 			margin-left: 30px;
 			height: 100%;
-			width: 160px;
 			box-sizing: border-box;
 			position: relative;
 			&__text {
 				line-height: 41px;
-				text-decoration: none;
+				margin: 0px;
 				color: $headerTopMenuTextColor;
+			}
+			&.favorites {
+				margin-left: 0px;
+				width: 130px;
+				padding-left: 29px;
+				text-decoration: none;
 				&:hover {
 					text-decoration: underline;
 				}
 			}
-			&.favorites {
-				margin-left: 0px;
-				padding-left: 59px;
-			}
 			&.personalOffice {
+				width: 160px;
 				padding-left: 35px;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 			.favorites__img{
 				position: absolute;
 				top: 10px;
-				left: 30px;
+				left: 0px;
 			}
 			.personalOffice__img {
 				position: absolute;
