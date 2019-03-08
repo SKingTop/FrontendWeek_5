@@ -190,8 +190,11 @@
 				background-color: $headerSearchFormSearchResultsContainer;
 				&__item {
 					width: 100%;
-					height: 75px;
+					min-height: 75px;
+					height: auto;
 					box-sizing: border-box;
+					padding-top: 30px;
+					padding-bottom: 30px;
 					padding-left: 30px;
 					cursor: pointer;
 					&:hover {
@@ -201,10 +204,20 @@
 						color: $headerSearchFormSearchResultsContainerItemTextHover;
 						font-family: Proxima Nova Semibold, Arial, sans-serif;
 					}
+					// &__item:after {
+					//     left: 30px;
+					//     right: 0;
+					//     bottom: 0;
+					//     position: absolute;
+					//     content: '';
+					//     width: calc(100% - 50px);
+					//     height: 1px;
+					//     background-color: #e9eef6;
+					// }
 					&__text {
 						margin: 0px;
 						box-sizing: border-box;
-						padding-top: 30px;
+						padding-right: 50px;
 						font-size: 18px;
 						color: $headerSearchFormSearchResultsContainerItemText;
 					}
@@ -233,6 +246,7 @@
 			}
 		}
 	}
+// basket
 	&__basket {
 		z-index: 500;
 		width: 225px;
@@ -243,6 +257,7 @@
 		padding-left: 99px;
 		cursor: pointer;
 		text-decoration: none;
+		background-color: $headerBottomMenuBasket;
 		&__bascetIco {
 			position: absolute;
 			top: 17px;
@@ -254,9 +269,6 @@
 			line-height: 55px;
 			margin: 0px;
 			font-size: 18px;	
-		}
-		&:hover {
-			background-color: $headerBottomMenuBasketHover;
 		}
 		&__basketIndicator {
 			position: absolute;
@@ -272,15 +284,183 @@
 			top: 13px;
 			left: 68px;
 		}
-		// &__emptyBasket {
-		// 	width: 666px;
-		// 	height: 132px;
-		// 	margin-top: 55px;
-		// 	// position: absolute;
-		// 	// top: 55px;
-		// 	// right: 30px;
-		// 	background-color: green;
-		// 	// &__icon
-		// }
+// Empty Basket
+		&__emptyBasket.open {
+			display: block;
+		}
+		&__emptyBasket {
+			display: none;
+			width: 666px;
+			height: 132px;
+			float: right;
+			background-color: $headerBottomMenuBasketEmptyBasket;
+			position: relative;
+			overflow: hidden;
+			box-sizing: border-box;
+			padding-left: 40px;
+			&__icon {
+				position: absolute;
+				top: 2px;
+				right: -40px;
+			}
+			&__text {
+				margin: 0px;
+				margin-top: 40px;
+				font-size: 16px;
+			}
+			&__link {
+				display: block;
+				box-sizing: border-box;
+				width: 160px;
+				padding-right: 20px;
+				margin: 0px;
+				margin-top: 19px;
+				font-size: 16px;
+				color: $headerBottomMenuBasketEmptyBasketTextLink;
+				font-family: Proxima Nova Semibold, Arial, sans-serif;
+				position: relative;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+			&__linkArrow {
+				position: absolute;
+				right: 0px;
+				top: 3px;
+			}
+		}
+// Full Basket
+		&__fullBasket.open {
+			display: block;
+		}
+		&__fullBasket {
+			cursor: default;
+			display: none;
+			width: 666px;
+			height: 463px;
+			float: right;
+			background-color: $headerBottomMenuBasketFullBasket;
+			text-align: center;
+			&__container {
+				width: 100%;
+				height: 303px;
+				overflow-y: scroll;
+				background-color: $headerBottomMenuBasketFullBasketContainer;
+				&__item {
+					width: 100%;
+					min-height: 71px;
+					height: auto;
+					display: flex;
+					flex-direction: row;
+					&__product {
+						width: 477px;
+						min-height: 70px;
+						height: auto;
+						box-sizing: border-box;
+						padding: 30px;
+						text-align: left;
+						color: $headerBottomMenuBasketFullBasketText;
+						font-size: 18px;
+						&__name {
+							margin: 0px;
+						}
+					}
+					&:hover &__product__name {
+						color: $headerBottomMenuBasketFullBasketTextHover;
+						font-family: Proxima Nova Bold, Arial, sans-serif;
+					}
+					&:hover {
+						background-color: $headerBottomMenuBasketFullBasketContainerItemHover;
+					}
+					&__price {
+						width: 125px;
+						text-align: right;
+						.price__currentPrice {
+							margin: 0;
+							margin-top: 30px;
+							.currentPrice {
+								font-family: Proxima Nova Bold, Arial, sans-serif;
+								color: $priceColor;
+								font-size: 24px;
+							}
+						}
+						.price__oldPrice {
+							display: none;
+						}
+					}
+					&__price.sale {
+						.price__oldPrice {
+							display: block;
+							margin: 0;
+							.OldPrice, .money {
+								color: grey;
+								text-decoration: line-through;
+							}
+						}
+						.price__currentPrice {
+							margin: 0;
+							margin-top: 30px;
+							.currentPrice {
+								font-family: Proxima Nova Bold, Arial, sans-serif;
+								color: red;
+								font-size: 24px;
+							}
+							.money {
+								color: red;
+							}
+						}
+					}
+					&__deleteProduct {
+						width: 50px;
+						box-sizing: border-box;
+						padding-top: 33px;
+						img {
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			&__text {
+				margin: 0px;
+				font-size: 20px;
+				margin-top: 30px;
+			}
+			&__totalPrice {
+				font-family: Proxima Nova Bold, Arial, sans-serif;
+				color: $priceColor;
+			}
+			&__money {
+				font-size: 12px;
+				font-weight: 800;
+				color: $priceColor;
+			}
+			&__link {
+				margin-top: 25px;
+				display: inline-block;
+				width: 226px;
+				height: 45px;
+				text-align: center;
+				line-height: 45px;
+				box-sizing: border-box;
+				text-decoration: none;
+				font-family: Proxima Nova Bold, Arial, sans-serif;
+				&.toBasket {
+					border: 2px solid $headerBottomMenuBasketFullBasketButtons;
+					color: $headerBottomMenuBasketFullBasketButtons;
+				}
+				&.doOrder {
+					border: 2px solid $headerBottomMenuBasketFullBasketButtons;
+					background-color: $headerBottomMenuBasketFullBasketButtons;
+					color: $headerBottomMenuBasketFullBasketButtonsText;
+					margin-left: 10px;
+				}
+			}
+		}
 	}
+}
+.money {
+	font-size: 12px;
+	font-weight: 800;
+	color: $priceColor;
 }

@@ -18,16 +18,35 @@ $(document).ready(function(){
 	// });
 	// ####################################################
 	// Вывод окна результатов###################################
-	$('.header_bottomMenu__searchForm__textArea').focus(
-	 function() {
-		$('.header_bottomMenu__searchForm__searchResults').addClass('visible');
-		$('.header_blur').addClass('active');
+// 	$('.header_bottomMenu__searchForm__textArea').focus(
+// 	 function() {
+// 		$('.header_bottomMenu__searchForm__searchResults').addClass('visible');
+// 		$('.header_blur').addClass('active');
+// 	});
+// // Скрытие окна результатов###################################
+// 	$('.header_bottomMenu__searchForm__textArea').focusout(
+// 	 function() {
+// 		$('.header_bottomMenu__searchForm__searchResults').removeClass('visible');
+// 		$('.header_blur').removeClass('active');
+// 	});
+	// ####################################################
+	// $('.header_bottomMenu__basket').on( 'click', function() {
+	// 	$('.header_blur').toggleClass('active');
+	// 	$('.header_bottomMenu__basket__emptyBasket').toggleClass('open');
+	// });
+	$('.header_bottomMenu__basket').on( 'click', function() {
+		$('.header_blur').toggleClass('active');
+		$('.header_bottomMenu__basket__fullBasket').toggleClass('open');
 	});
-// Скрытие окна результатов###################################
-	$('.header_bottomMenu__searchForm__textArea').focusout(
-	 function() {
+	$('.header_bottomMenu__searchForm__textArea').on( 'click', function() {
+		$('.header_bottomMenu__searchForm__searchResults').toggleClass('visible');
+		$('.header_blur').toggleClass('active');
+	});
+		$('.header_blur').on( 'click', function() {
 		$('.header_bottomMenu__searchForm__searchResults').removeClass('visible');
+		$('.header_bottomMenu__basket__fullBasket').removeClass('open');
+		$('.header_bottomMenu__basket__emptyBasket').removeClass('open');
+		$('.header_bottomMenu__dropdown__menu').removeClass('open');
 		$('.header_blur').removeClass('active');
 	});
-	// ####################################################
 });
