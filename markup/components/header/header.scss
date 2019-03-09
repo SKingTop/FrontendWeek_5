@@ -2,10 +2,10 @@
 	width: 100%;
 	min-height: 170px;
 }
-.header_blur {
+.blur {
 	display: none;
 }
-.header_blur.active {
+.blur.visible {
 	display: block;
 	overflow: hidden;
 	width: 100%;
@@ -13,8 +13,5 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	background-color: $header_blur;
+	background-color: $blur;
 }
-@import 'topMenu/topMenu.scss';
-@import 'middleContainer/middleContainer.scss';
-@import 'bottomMenu/bottomMenu.scss';

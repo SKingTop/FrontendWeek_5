@@ -1,7 +1,7 @@
 .header_topMenuBackgound {
 	width: 100%;
 	height: 41px;
-	background-color: $headerTopMenuBackground;
+	background-color: $topMenuBackground;
 }
 .header_topMenu {
 	width: 1360px;
@@ -19,7 +19,7 @@
 	&__item {
 		line-height: 41px;
 		text-decoration: none;
-		color: $headerTopMenuTextColor;
+		color: $topMenuTextColor;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -37,7 +37,7 @@
 		&__text {
 			line-height: 41px;
 			margin: 0px;
-			color: $headerTopMenuTextColor;
+			color: $topMenuTextColor;
 		}
 		&.favorites {
 			width: 130px;

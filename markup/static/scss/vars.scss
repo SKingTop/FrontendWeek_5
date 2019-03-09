@@ -1,44 +1,48 @@
-$header_blur: rgba(0,72,132,0.5);
-// ############# top Menu
-$headerTopMenuBackground: #f4f5f4;
-$headerTopMenuTextColor: #646464;
-$headerTopMenuTextColorHover: #00953c;
-// ############ botom Menu
-$headerBottomMenuBackground: #004884;
-$headerBottomMenuTextColor: #ffffff;
-// ############ botom Menu Dropdown
-$headerBottomMenuDropdown: #00953c;
-$headerBottomMenuDropdovnMenuBackground: #ffffff;
-$headerBottomMenuDropdovnMenuBackgroundHover: #e5ecf2;
-$headerBottomMenuDropdovnMenuText: #646464;
-$headerBottomMenuDropdovnMenuTextHover: #004884;
-// ############ botom Menu Search Form
-$headerSearchFormSubmitBtn: #00ae46;
-$headerSearchFormSubmitBtnHover: #008e46;
-$headerSearchFormSearchResults: #f7fafb;
-$headerSearchFormSearchResultsContainer: #ffffff;
-$headerSearchFormSearchResultsContainerItemHover: #e5ecf2;
-$headerSearchFormSearchResultsContainerItemText: #343434;
-$headerSearchFormSearchResultsContainerItemTextHover: #004884;
-$headerSearchFormSearchResultsLink: #004884;
-//////////////////////////////
-$headerSearchFormNoSearchResult: #ffffff;
-$headerSearchFormNoSearchResultText: #646464;
-$headerSearchFormNoSearchResultLink: #004884;
-// ############ botom Menu Basket
-$headerBottomMenuBasket: #003764;
-$headerBottomMenuBasketIndicator: #00ae46;
-// ############ botom Menu Basket Empty
-$headerBottomMenuBasketEmptyBasket: #ffffff;
-$headerBottomMenuBasketEmptyBasketText: #343434;
-$headerBottomMenuBasketEmptyBasketTextLink: #004884;
-// ###################botom Menu Basket Full
-$headerBottomMenuBasketFullBasket: #f7fafb;
-$headerBottomMenuBasketFullBasketContainer: #ffffff;
-$headerBottomMenuBasketFullBasketContainerItemHover: #e5ecf2;
-$headerBottomMenuBasketFullBasketText: #343434;
-$headerBottomMenuBasketFullBasketTextHover: #004884;
-$headerBottomMenuBasketFullBasketTextLink: #004884;
-$headerBottomMenuBasketFullBasketButtons: #00ae46;
-$headerBottomMenuBasketFullBasketButtonsText: #ffffff;
-$priceColor: #004884;
+$blur: rgba(0,72,132,0.5);
+// ############# header top menu
+$topMenuBackground: #f4f5f4;
+$topMenuTextColor: #646464;
+// ############# header middle container
+$middleContainerTextColor: #646464;
+$middleContainerTextColorHover: #00953c;
+// ############ header botom Menu
+$bottomMenuBackground: #004884;
+$bottomMenuTextColor: #ffffff;
+// ############ header botom Menu Dropdown
+$bottomMenuDropdown: #00953c;
+$bottomMenuDropdownMenuBackground: #ffffff;
+$bottomMenuDropdownMenuBackgroundHover: #e5ecf2;
+$bottomMenuDropdownMenuText: #646464;
+$bottomMenuDropdownMenuTextHover: #004884;
+// ############ header botom Menu Search Form
+$searchFormSubmitBtn: #00ae46;
+$searchFormSubmitBtnHover: #008e46;
+// ############ header botom Menu Search Form Search Results
+$searchFormSearchResults: #f7fafb;
+$searchFormSearchResultsContainer: #ffffff;
+$searchFormSearchResultsContainerItemHover: #e5ecf2;
+$searchFormSearchResultsContainerItemText: #343434;
+$searchFormSearchResultsContainerItemTextHover: #004884;
+$searchFormSearchResultsLink: #004884;
+// ############ header botom Menu Search Form No Search Result
+$searchFormNoSearchResult: #ffffff;
+$searchFormNoSearchResultText: #646464;
+$searchFormNoSearchResultLink: #004884;
+// ############ header botom Menu Basket
+$bottomMenuBasket: #003764;
+$bottomMenuBasketIndicator: #00ae46;
+// ############ header botom Menu Basket Empty
+$bottomMenuBasketEmptyBasket: #ffffff;
+$bottomMenuBasketEmptyBasketText: #343434;
+$bottomMenuBasketEmptyBasketTextLink: #004884;
+// ############ header botom Menu Basket Full
+$bottomMenuBasketFullBasket: #f7fafb;
+$bottomMenuBasketFullBasketContainer: #ffffff;
+$bottomMenuBasketFullBasketContainerItemHover: #e5ecf2;
+$bottomMenuBasketFullBasketText: #343434;
+$bottomMenuBasketFullBasketTextHover: #004884;
+$bottomMenuBasketFullBasketTextLink: #004884;
+$bottomMenuBasketFullBasketButtons: #00ae46;
+$bottomMenuBasketFullBasketButtonsText: #ffffff;
+$bottomMenuBasketFullBasketPriceColor: #004884;
+$bottomMenuBasketFullBasketSalePriceColor: #ae0019;
