@@ -1,92 +1,98 @@
 .header_middleContainer {
 	width: 1360px;
-	height: 74px;
+	min-height: 74px;
+	height: auto;
 	padding: 0px 30px;
+	padding-bottom: 5px;
 	box-sizing: border-box;
 	margin: 0px auto;
 	display: flex;
 	flex-direction: row;
-	&_item {
-		display: inline-block;
-		height: 100%;
-		&__logo {
-			width: 270px;
-			&__img {
-				margin-top: 7px;
+	justify-content: space-between;
+}
+.header_logo__img {
+	margin-top: 7px;
+}
+.header_info	{
+	width: 1030px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: $headerTopMenuTextColor;
+	font-size: 16px;
+	&__time {
+		max-width: 285px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 60px;
+		&__icon {
+			position: absolute;
+			top: 16px;
+			left: 5px;			
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 22px;
+		}
+	}
+	&__map {
+		max-width: 285px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 40px;
+		&__icon {
+			position: absolute;
+			top: 20px;
+			left: 0px;			
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 30px;
+		}
+	}
+	&__email {
+		min-width: 195px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 54px;
+		&__icon {
+			position: absolute;
+			top: 27px;
+			left: 0px;			
+		}
+		&__text {
+			display: block;
+			max-width: 140px;
+			margin-top: 30px;
+			text-decoration: none;
+			color: $headerTopMenuTextColor;
+			&:hover {
+				text-decoration: underline;
 			}
 		}
-		&__time {
-			width: 285px;
-			box-sizing: border-box;
-			position: relative;
-			padding-left: 60px;
-			&__icon {
-				position: absolute;
-				top: 16px;
-				left: 5px;			
-			}
-			&__text {
-				font-size: 16px;
-				margin: 0px;
-				margin-top: 22px;
-				color: $headerTopMenuTextColor;
-			}
+	}
+	&__phone {
+		max-width: 175px;
+		box-sizing: border-box;
+		position: relative;
+		padding-left: 55px;
+		&__icon {
+			position: absolute;
+			top: 23px;
+			left: 0px;			
 		}
-		&__map {
-			width: 285px;
-			box-sizing: border-box;
-			position: relative;
-			padding-left: 100px;
-			&__icon {
-				position: absolute;
-				top: 15px;
-				left: 62px;			
-			}
-			&__text {
-				font-size: 16px;
-				margin: 0px;
-				margin-top: 30px;
-				color: $headerTopMenuTextColor;
-			}
-		}
-		&__email {
-			width: 285px;
-			box-sizing: border-box;
-			position: relative;
-			padding-left: 77px;
-			&__icon {
-				position: absolute;
-				top: 27px;
-				left: 21px;			
-			}
-			&__text {
+		&__text {
+			margin: 0px;
+			margin-top: 23px;
+			&__link {
 				display: block;
-				font-size: 16px;
-				margin: 0px;
-				margin-top: 30px;
 				text-decoration: none;
+				font-family: Proxima Nova Semibold, Arial, sans-serif;
 				color: $headerTopMenuTextColor;
 				&:hover {
-					text-decoration: underline;
+					color: $headerTopMenuTextColorHover;
 				}
-			}
-		}
-		&__phone {
-			width: 175px;
-			box-sizing: border-box;
-			position: relative;
-			padding-left: 55px;
-			&__icon {
-				position: absolute;
-				top: 23px;
-				left: 0px;			
-			}
-			&__text {
-				font-size: 16px;
-				margin: 0px;
-				margin-top: 23px;
-				color: $headerTopMenuTextColor;
-				font-family: Proxima Nova Semibold, Arial, sans-serif;
 			}
 		}
 	}
