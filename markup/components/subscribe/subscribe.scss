@@ -1,0 +1,151 @@
+.subscribeBackground {
+	width: 100%;
+	min-height: 245px;
+	height: auto;
+	background-color: $subscribeBackground;
+}
+.subscribe {
+	width: 1360px;
+	min-height: 245px;
+	height: auto;
+	margin: 0px auto;
+	box-sizing: border-box;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&_container {
+		width: 790px;
+		min-height: 100px;
+		height: auto;
+		margin: 0px auto;
+		&__h3 {
+			margin: 0px;
+			font-size: 30px;
+			text-align: center;
+			color: $subscribeContainerH3;
+		}
+		&__subscribeForm {
+			width: 622px;
+			height: 45px;
+			margin: 0px auto;
+			margin-top: 30px;
+			position: relative;
+		}
+		&__text {
+			width: 622px;
+			margin: 0px auto;
+			margin-top: 20px;
+			color: $subscribeContainerText;
+			font-size: 14px;
+			letter-spacing: 0.6px;
+			line-height: 1.2;
+		}
+	}
+	&_thanks.visible {
+		display: block;
+	}
+	&_thanks {
+		display: none;
+		width: 600px;
+		height: 257px;
+		position: fixed;
+		top: calc(50% - 128px);
+		left: calc(50% - 300px);
+		background-color: $subscribeThanksBackground;
+		z-index: 500;
+		background-color: $subscribeThanksBackground;
+	}
+}
+.subscribeForm {
+	&_email {
+		outline: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 385px;
+		height: 45px;
+		border: none;
+		box-sizing: border-box;
+		padding-left: 61px;
+		font-size: 18px;
+		color: $subscribeFormEmailText;
+		border: 1px solid $subscribeFormEmailBorder;
+		&:focus {
+			border: 1px solid $subscribeFormEmailBorderFocus;
+		}
+	}
+	&_icon {
+		position: absolute;
+		top: 15px;
+		left: 26px;
+	}
+	&_btn {
+		outline: none;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		margin: 0px;
+		width: 216px;
+		height: 45px;
+		border: none;
+		background-color: $subscribeFormBtnBackground;
+		color: $subscribeFormBtnText;
+		font-size: 18px;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+		box-sizing: border-box;
+		border: 1px solid $subscribeFormBtnBorder;
+		cursor: pointer;
+		&:hover {
+			background-color: $subscribeFormBtnBackgroundHover;
+			color: $subscribeFormBtnTextHover;
+		}
+	}
+}
+.thanks {
+	&_content {
+		width: 100%;
+		height: 143px;
+		position: relative;
+		box-sizing: border-box;
+		padding-top: 40px;
+		background-color: $subscribeThanksContainerBackground;
+		&__h2 {
+			margin: 0px;
+			font-size: 40px;
+			text-align: center;
+			font-family: Proxima Nova Bold, Arial, sans-serif;
+			color: $subscribeThanks;
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 26px;
+			font-size: 20px;
+			color: $subscribeThanks;
+			text-align: center;
+			font-family: Proxima Nova Semibold, Arial, sans-serif;
+		}
+		&__close {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			cursor: pointer;
+		}
+	}
+	&_btn {
+		cursor: pointer;
+		display: block;
+		width: 216px;
+		height: 45px;
+		margin: 0px auto;
+		margin-top: 35px;
+		box-sizing: border-box;
+		border: 1px solid $subscribeThanksBtnBorder;
+		background-color: $subscribeThanksBtnBackground;
+		font-size: 18px;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+		color: $subscribeThanksBtnText;
+		&:hover {
+		background-color: $subscribeThanksBtnBackgroundHover;
+		color: $subscribeThanksBtnTextHover;
+		}
+	}
+}

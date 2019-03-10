@@ -1,9 +1,219 @@
-// .mainContainer {
-// 	width: 1360px;
-// 	min-height: 1000px;
-// 	height: auto;
-// 	margin: 0px auto;
-// 	background-color: red;
-// 	box-sizing: border-box;
-// 	padding: 0px 30px;
-// }
+.mainContainer {
+	width: 1360px;
+	min-height: 1100px;
+	height: auto;
+	margin: 0px auto;
+	box-sizing: border-box;
+	padding: 0px 30px;
+	padding-top: 30px;
+	position: relative;
+	&_text {
+		font-size: 16px;
+		color: $mainContainerText;
+		margin: 0px;
+	}
+	&_h1 {
+		margin-top: 20px;
+		margin-bottom: 0px;
+		color: $mainContainerH1;
+		font-size: 40px;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+	}
+	&_blogsContainer {
+		width: 950px;
+		min-height: 800px;
+		height: auto;
+	}
+	&_articlesContainer {
+		width: 300px;
+		min-height: 480px;
+		height: auto;
+		position: absolute;
+		top: 120px;
+		right: 0px;
+		padding-bottom: 40px;
+	}
+}
+.blogsContainer_item {
+	width: 100%;
+	min-height: 180px;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	box-sizing: border-box;
+	border-bottom: 1px solid $mainContainerBlogsContainerItemBorder;
+	&__img {
+		width: 285px;
+		height: 180px;
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__content {
+		width: 665px;
+		min-height: 180px;
+		height: auto;
+		box-sizing: border-box;
+		padding-top: 24px;
+		padding-left: 30px;
+		&__date {
+			margin: 0px;
+			font-size: 16px;
+			color: $mainContainerBlogsContainerItemContentDate;
+		}
+		&__link {
+			display: block;
+			width: auto;
+			text-decoration: none;
+			margin: 0px;
+			margin-top: 20px;
+			font-size: 20px;
+			color: $mainContainerBlogsContainerItemContentLink;
+			font-family: Proxima Nova Bold, Arial, sans-serif;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 12px;
+			font-size: 18px;
+			color: $mainContainerBlogsContainerItemContentText;
+			box-sizing: border-box;
+			padding-bottom: 15px;
+			line-height: 1.333;
+			letter-spacing: 0.1px;
+		}
+	}
+}
+.articlesContainer {
+	&_text {
+		margin: 0px;
+		font-size: 24px;
+		color: $mainContainerArticlesContainerText;
+		font-family: Proxima Nova Bold, Arial, sans-serif;
+	}
+	&_item {
+		width: 100%;
+		min-height: 90px;
+		height: auto;
+		box-sizing: border-box;
+		border-bottom: 1px solid $mainContainerArticlesContainerItemBorder;
+		&__link {
+			display: block;
+			text-decoration: none;
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 20px;
+			font-family: Proxima Nova Semibold, Arial, sans-serif;
+			color: $mainContainerArticlesContainerItemLink;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&__text {
+			margin: 0px;
+			margin-top: 15px;
+			font-size: 18px;
+			color: $mainContainerArticlesContainerItemText;
+		}
+	}
+	&_link {
+		display: block;
+		margin: 0px;
+		width: 188px;
+		margin-top: 27px;
+		margin-left: 57px;
+		font-size: 18px;
+		font-family: Proxima Nova Semibold, Arial, sans-serif;
+		text-decoration: none;
+		color: $mainContainerArticlesContainerLink;
+		position: relative;
+		&__arrow {
+			position: absolute;
+			top: 5px;
+			right: 2px;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.pageSelector {
+	width: 950px;
+	height: 160px;
+	box-sizing: border-box;
+	padding-top: 50px;
+	&_container {
+		width: 730px;
+		height: 33px;
+		margin: 0px auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+.page_prev {
+	width: 160px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 18px;
+	box-sizing: border-box;
+	padding-left: 40px;
+	text-align: center;
+	position: relative;
+	font-family: Proxima Nova Bold, Arial, sans-serif;
+	color: $paleSelectorLink;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	&__icon {
+		position: absolute;
+		top: 10px;
+		left: 25px;
+	}
+}
+.page_next {
+	width: 160px;
+	height: 33px;
+	line-height: 33px;
+	box-sizing: border-box;
+	padding-right: 40px;
+	text-align: center;
+	position: relative;
+	font-family: Proxima Nova Bold, Arial, sans-serif;
+	color: $paleSelectorLink;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	&__icon {
+		position: absolute;
+		top: 10px;
+		right: 35px;
+	}
+}
+.pages {
+	min-width: 330px;
+	height: 33px;
+	&_item {
+		cursor: pointer;
+		font-size: 18px;
+		text-decoration: none;
+		line-height: 33px;
+		padding: 5.5px 10px;
+		font-family: Proxima Nova Semibold, Arial, sans-serif;
+		color: $paleSelectorLink;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&_item.active {
+		background-color: $paleSelectorLinkActiveBackground;
+		color: $paleSelectorLinkActive;
+		text-decoration: none;
+	}
+}

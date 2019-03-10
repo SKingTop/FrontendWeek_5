@@ -7,10 +7,12 @@ html, body {
     height: 100%;
 }
 
-.page {
-    
+.page.noScroll{
+    overflow: hidden;
 }
-
+.page__buffer {
+    height: 50px;
+}
 .page__wrapper {
     min-height: 100%;
     margin-bottom: -50px;
@@ -18,8 +20,4 @@ html, body {
 
 * html .page__wrapper {
     height: 100%;
-}
-
-.page__buffer {
-    height: 50px;
 }

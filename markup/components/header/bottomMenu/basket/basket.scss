@@ -9,7 +9,12 @@
 		padding-left: 99px;
 		cursor: pointer;
 		text-decoration: none;
-		background-color: $bottomMenuBasket;
+		&.active {
+			background-color: $bottomMenuBasket;
+		}
+		&:hover {
+			background-color: $bottomMenuBasket;
+		}
 	}
 }
 .basket {

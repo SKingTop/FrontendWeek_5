@@ -1,0 +1,135 @@
+.footerBackground {
+	width: 100%;
+	min-height: 185px;
+	height: auto;
+	background-color: $footerBackground;
+}
+.footer {
+	width: 1360px;
+	min-height: 185px;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0px 30px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	&_logo {
+		width: 210px;
+		height: 185px;
+		box-sizing: border-box;
+		padding-top: 12px;
+		position: relative;
+		&__privacyPolicy {
+			position: absolute;
+			left: 1px;
+			bottom: 24px;
+			color: $footerPrivacyPolicy;
+			font-size: 14px;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&_menu {
+		width: 207px;
+		min-height: 185px;
+		height: auto;
+		box-sizing: border-box;
+		padding-top: 30px;
+		&__item {
+			font-size: 16px;
+			display: inline-block;
+			width: 48%;
+			text-decoration: none;
+			color: $footerText;
+			margin-bottom: 10px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&_content {
+		width: 445px;
+		min-height: 185px;
+		height: auto;
+		box-sizing: border-box;
+		padding-top: 30px;
+		&__item {
+			font-size: 16px;
+			display: inline-block;
+			width: 32%;
+			text-decoration: none;
+			color: $footerText;
+			margin-bottom: 10px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&_contacts {
+		width: 190px;
+		min-height: 185px;
+		height: auto;
+		box-sizing: border-box;
+		padding-top: 30px;
+		&__mail {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			padding-left: 50px;
+			position: relative;
+			color: $footerText;
+			text-decoration: none;
+			font-size: 16px;
+			&:hover {
+				text-decoration: underline;
+			}
+			&__img {
+				position: absolute;
+				left: 0px;
+				top: 2px;
+			}
+		}
+		&__phone {
+			width: 100%;
+			box-sizing: border-box;
+			padding-left: 50px;
+			position: relative;
+			margin-top: 30px;
+			&__img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			&__item {
+				display: block;
+				color: $footerText;
+				text-decoration: none;
+				font-size: 16px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		&__time {
+			width: 100%;
+			box-sizing: border-box;
+			padding-left: 50px;
+			position: relative;
+			margin-top: 30px;
+			&__img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			&__text {
+				box-sizing: border-box;
+				padding-top: 6px;
+				color: $footerText;
+				font-size: 16px;
+			}
+		}
+	}
+}

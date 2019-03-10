@@ -1,0 +1,41 @@
+.copyrightBackground {
+	width: 100%;
+	height: 41px;
+	background-color: $copyrightBackground;
+}
+.copyright {
+	width: 1360px;
+	height: 41px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	padding: 0px 30px;
+	display: flex;
+	justify-content: space-between;
+	&_text {
+		height: 41px;
+		line-height: 41px;
+		color: $copyrightText;
+		font-size: 16px;
+	}
+	&_author {
+		height: 41px;
+		box-sizing: border-box;
+		padding-left: 58px;
+		position: relative;
+		&__img {
+			position: absolute;
+			top: 16px;
+			left: 0px;
+		}
+		&__text {
+			display: block;
+			text-decoration: none;
+			margin: 0px;
+			margin-top: 15px;
+			font-size: 16px;
+			font-family: Proxima Nova Semibold, Arial, sans-serif;
+			color: $copyrightAuthorText;
+			border-bottom: 1px solid $copyrightAuthorTextBorder;
+		}
+	}
+}
