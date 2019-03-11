@@ -12,7 +12,7 @@
         <meta content="telephone=no" name="format-detection">
         <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
         <meta name="HandheldFriendly" content="true">
-        <link href="static/css/main71lmjn.min.css" rel="stylesheet" type="text/css">
+        <link href="static/css/main6altdw.min.css" rel="stylesheet" type="text/css">
 
         <link rel="icon" type="image/x-icon" href="favicon.png">
         <script>
@@ -115,7 +115,7 @@
                         </div>
                         <!-- ###############searchForm################ -->
                         <div class="header_bottomMenu__searchForm">
-                            <form action="" method="POST" name="searchForm">
+                            <form action="" method="POST" name="searchForm" class="searchForm">
                                 <input class="searchForm_textArea" type="text" name="searchQuery" placeholder="Название картриджа или принтера,например «CF283A HP»" required>
                                 <input class="searchForm_submitBtn" type="submit" name="searchBtn" value="Найти">
                                 <img class="searchForm_searchIco" src="static/img/assets/header/searchIco.png" alt="">
@@ -257,19 +257,19 @@
                                 <p class="fullBasket_text"><span class="fullBasket_totalCount">4 товара</span> на сумму <span class="fullBasket_totalPrice">8 900</span><span class="fullBasket_money"> ₸</span>
                                 </p>
                                 <a href="#" class="fullBasket_link toBasket">В корзину</a><a href="#" class="fullBasket_link doOrder">Оформить заказ</a>
-                                <div class="deleteFromBasket">
-                                    <div class="deleteFromBasket_content">
-                                        <h2 class="deleteFromBasket_content__h2">Удалить товар?</h2>	
-                                        <img src="static/img/assets/header/close.png" alt="" class="deleteFromBasket_content__close">
-                                    </div>
-                                    <input type="button" class="deleteFromBasket_delete" value="Удалить">
-                                    <input type="button" class="deleteFromBasket_cancel" value="Отмена">
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="blur"></div>
+            </div>
+            <div class="deleteFromBasket">
+                <div class="deleteFromBasket_content">
+                    <h2 class="deleteFromBasket_content__h2">Удалить товар?</h2>	
+                    <img src="static/img/assets/header/close.png" alt="" class="deleteFromBasket_content__close">
+                </div>
+                <input type="button" class="deleteFromBasket_delete" value="Удалить">
+                <input type="button" class="deleteFromBasket_cancel" value="Отмена">
             </div>
             <div class="mainContainer">
                 <p class="mainContainer_text">Главная / Блог</p>
@@ -371,128 +371,78 @@
                     <div class="thanks_content">
                         <h2 class="thanks_content__h2">Спасибо !</h2>
                         <p class="thanks_content__text">Ваша заявка принята</p>
-                        <img src="static/img/assets/subscribe/close.png" " alt=" " class="thanks_content__close ">
-
-            		</div>
-
-            		<input class="thanks_btn " type="button " value="Хорошо ">
-
-            	</div>
-
-            </div>            <div class="page__buffer "></div>
+                        <img src="static/img/assets/subscribe/close.png" alt="" class="thanks_content__close">
+                    </div>
+                    <input type="button" class="thanks_btn" value="Хорошо">
+                </div>
+            </div>
+            <div class="page__buffer"></div>
         </section>
 
 
-        <footer class="page__footer ">
-            <div class="footerBackground ">	
+        <footer class="page__footer">
+            <div class="footerBackground">
+                <div class="footer">
+                    <div class="footer_logo">
+                        <a href="#" class="footer_logo__link">
+                            <img class="footer_logo__link__img" src="static/img/assets/footer/logo.png" alt="">
+                        </a>
+                        <a href="#" class="footer_logo__privacyPolicy">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer_menu">
+                        <a href="#" class="footer_menu__item">Блог</a>
+                        <a href="#" class="footer_menu__item">О нас</a>
+                        <a href="#" class="footer_menu__item">Оплата</a>
+                        <a href="#" class="footer_menu__item">Контакты</a>
+                        <a href="#" class="footer_menu__item">Доставка</a>
+                    </div>
+                    <div class="footer_content">
+                        <a href="#" class="footer_content__item">HP</a>
+                        <a href="#" class="footer_content__item">Panasonic</a>
+                        <a href="#" class="footer_content__item">Samsung</a>
+                        <a href="#" class="footer_content__item">Canon</a>
+                        <a href="#" class="footer_content__item">HP</a>
+                        <a href="#" class="footer_content__item">Panasonic</a>
+                        <a href="#" class="footer_content__item">HP</a>
+                        <a href="#" class="footer_content__item">Canon</a>
+                        <a href="#" class="footer_content__item">HP</a>
+                        <a href="#" class="footer_content__item">Xerox</a>
+                        <a href="#" class="footer_content__item">HP</a>
+                        <a href="#" class="footer_content__item">Xerox</a>
+                        <a href="#" class="footer_content__item">Samsung</a>
+                        <a href="#" class="footer_content__item">Xerox</a>
+                        <a href="#" class="footer_content__item">Samsung</a>
+                    </div>
+                    <div class="footer_contacts">
+                        <a href="mailto:#" class="footer_contacts__mail">
+                            <img src="static/img/assets/footer/mail.png" alt="" class="footer_contacts__mail__img">printpro@gmail.com</a>
+                        <div class="footer_contacts__phone">
+                            <img src="static/img/assets/footer/phone.png" alt="" class="footer_contacts__phone__img">
+                            <a href="tel:+77771455454" class="footer_contacts__phone__item">8 777 145 54 54</a>
+                            <a href="tel:+77014988989" class="footer_contacts__phone__item">8 701 498 89 89</a>
+                        </div>
+                        <div class="footer_contacts__time">
+                            <img src="static/img/assets/footer/time.png" alt="" class="footer_contacts__time__img">
+                            <p class="footer_contacts__time__text">Пн-Вс 9:00 - 19:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyrightBackground">
+            <div class="copyright">
+                <div class="copyright_text">© 2007-2018, Интернет-магазин картриджей</div>
+                <div class="copyright_author">
+                    <img src="static/img/assets/copyright/markello.png" alt="" class="copyright_author__img">
+                    <a href="#" class="copyright_author__text">Made this love</a>
+                </div>
+            </div>
+        </div>
 
-            	<div class="footer ">
-
-            		<div class="footer_logo ">
-
-            			<a href="# " class="footer_logo__link "><img class="footer_logo__link__img " src="static/img/assets/footer/logo.png " alt=" "></a>
-
-            			<a href="# " class="footer_logo__privacyPolicy ">Политика конфиденциальности</a>
-
-            		</div>
-
-            		<div class="footer_menu ">
-
-            			<a href="# " class="footer_menu__item ">Блог</a>
-
-            			<a href="# " class="footer_menu__item ">О нас</a>
-
-            			<a href="# " class="footer_menu__item ">Оплата</a>
-
-            			<a href="# " class="footer_menu__item ">Контакты</a>
-
-            			<a href="# " class="footer_menu__item ">Доставка</a>
-
-            		</div>
-
-            		<div class="footer_content ">
-
-            			<a href="# " class="footer_content__item ">HP</a>
-
-            			<a href="# " class="footer_content__item ">Panasonic</a>
-
-            			<a href="# " class="footer_content__item ">Samsung</a>
-
-            			<a href="# " class="footer_content__item ">Canon</a>
-
-            			<a href="# " class="footer_content__item ">HP</a>
-
-            			<a href="# " class="footer_content__item ">Panasonic</a>
-
-            			<a href="# " class="footer_content__item ">HP</a>
-
-            			<a href="# " class="footer_content__item ">Canon</a>
-
-            			<a href="# " class="footer_content__item ">HP</a>
-
-            			<a href="# " class="footer_content__item ">Xerox</a>
-
-            			<a href="# " class="footer_content__item ">HP</a>
-
-            			<a href="# " class="footer_content__item ">Xerox</a>
-
-            			<a href="# " class="footer_content__item ">Samsung</a>
-
-            			<a href="# " class="footer_content__item ">Xerox</a>
-
-            			<a href="# " class="footer_content__item ">Samsung</a>
-
-            		</div>
-
-            		<div class="footer_contacts ">
-
-            			<a href="mailto:# " class="footer_contacts__mail "><img src="static/img/assets/footer/mail.png " alt=" " class="footer_contacts__mail__img "> printpro@gmail.com</a>
-
-            			<div class="footer_contacts__phone ">
-
-            				<img src="static/img/assets/footer/phone.png " alt=" " class="footer_contacts__phone__img ">
-
-            				<a href="tel:+77771455454 " class="footer_contacts__phone__item ">8 777 145 54 54</a>
-
-            				<a href="tel:+77014988989 " class="footer_contacts__phone__item ">8 701 498 89 89</a>
-
-            			</div>
-
-            			<div class="footer_contacts__time ">
-
-            				<img src="static/img/assets/footer/time.png " alt=" " class="footer_contacts__time__img ">
-
-            				<p class="footer_contacts__time__text ">Пн-Вс 9:00 - 19:00</p>
-
-            			</div>
-
-            		</div>
-
-            	</div>
-
-            </div>        </footer>
-            <div class="copyrightBackground ">
-
-            	<div class="copyright ">
-
-            		<div class="copyright_text ">©  2007-2018, Интернет-магазин картриджей</div>
-
-            		<div class="copyright_author ">
-
-            			<img src="static/img/assets/copyright/markello.png " alt=" " class="copyright_author__img ">
-
-            			<a href="# " class="copyright_author__text ">Made this love</a>
-
-            		</div>
-
-            	</div>
-
-            </div>        
-        
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
-        <script src="static/js/main71lmjn.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="static/js/main6altdw.min.js"></script>
     </body>
 
 </html>

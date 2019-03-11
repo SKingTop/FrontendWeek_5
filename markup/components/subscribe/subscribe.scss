@@ -92,7 +92,7 @@
 		font-size: 18px;
 		font-family: Proxima Nova Bold, Arial, sans-serif;
 		box-sizing: border-box;
-		border: 1px solid $subscribeFormBtnBorder;
+		border: 2px solid $subscribeFormBtnBorder;
 		cursor: pointer;
 		&:hover {
 			background-color: $subscribeFormBtnBackgroundHover;
@@ -138,7 +138,7 @@
 		margin: 0px auto;
 		margin-top: 35px;
 		box-sizing: border-box;
-		border: 1px solid $subscribeThanksBtnBorder;
+		border: 2px solid $subscribeThanksBtnBorder;
 		background-color: $subscribeThanksBtnBackground;
 		font-size: 18px;
 		font-family: Proxima Nova Bold, Arial, sans-serif;
@@ -146,6 +146,25 @@
 		&:hover {
 		background-color: $subscribeThanksBtnBackgroundHover;
 		color: $subscribeThanksBtnTextHover;
+		}
+	}
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.subscribe {
+		width: 1024px;
+	}
+	.subscribe_container {
+		&__h3 {
+			font-size: 28px;
+		}
+		&__text {
+			font-size: 12px;
+		}
+	}
+	.subscribeForm {
+		&_email, &_btn {
+			font-size: 16px;
 		}
 	}
 }

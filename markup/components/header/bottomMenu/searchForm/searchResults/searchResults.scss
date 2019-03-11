@@ -6,8 +6,6 @@
 		display: none;
 		width: 566px;
 		height: 451px;
-		margin-top: 55px;
-		margin-left: 15px;
 		background-color: $searchFormSearchResults;
 		box-sizing: border-box;
 		padding-right: 15px;
@@ -65,6 +63,20 @@
 			position: absolute;
 			top: 5px;
 			right: 0px;
+		}
+	}
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.searchForm_searchResults {
+		width: 459px;
+		height: 351px;
+	}
+	.searchResults_container {
+		width: 459px;
+		height: 273px;
+		&__item__text {
+			font-size: 15px;
 		}
 	}
 }

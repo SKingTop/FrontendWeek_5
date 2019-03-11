@@ -1,7 +1,33 @@
 
+$(document).ready(function(){ 
+// Удаление с корзины
+	$('.deleteProduct__icon').on( 'click', function() {
+		$('.deleteFromBasket').addClass('visible');
+		$('.blur').addClass('LV2');
+	});
+// Закрытие корзины
+	//На крестик
+	$('.deleteFromBasket_content__close').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+		$('.blur').removeClass('LV2');
+	});
+	//На кнопку удалить
+	$('.deleteFromBasket_delete').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+		$('.blur').removeClass('LV2');
+	});
+	//На кнопку отмена
+	$('.deleteFromBasket_cancel').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+		$('.blur').removeClass('LV2');
+	});
+//Отключение окна при клике на блюр 2ур.
+	$('.blur').on( 'click', function() {
+		$('.deleteFromBasket').removeClass('visible');
+		$(this).removeClass('LV2');
+	});
+});
 
-
-//Выпадающее меню
 $(document).ready(function(){ 
 // Выпадающее меню
 	$('.header_bottomMenu__dropdownMenu').on( 'click', function() {
@@ -65,7 +91,6 @@ $(document).ready(function(){
 		$('.searchForm_noSearchResult').removeClass('visible');
 		$('.basket_fullBasket').removeClass('visible');
 		$('.basket_emptyBasket').removeClass('visible');
-		$('.page').removeClass('noScroll');
 		$('.subscribe_thanks').removeClass('visible');
 		$('.header_bottomMenu__basket').removeClass('active');
 		$('.header_bottomMenu__dropdownMenu').removeClass('open');
@@ -76,18 +101,15 @@ $(document).ready(function(){
 	$('.subscribeForm_btn').on( 'click', function() {
 		$('.subscribe_thanks').addClass('visible');
 		$('.blur').addClass('visible');
-		$('.page').addClass('noScroll');
 	});
 
 	$('.thanks_content__close').on( 'click', function() {
 		$('.subscribe_thanks').removeClass('visible');
 		$('.blur').removeClass('visible');
-		$('.page').removeClass('noScroll');
 	});
 
 	$('.thanks_btn').on( 'click', function() {
 		$('.subscribe_thanks').removeClass('visible');
 		$('.blur').removeClass('visible');
-		$('.page').removeClass('noScroll');
 	});
 });

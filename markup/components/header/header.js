@@ -1,4 +1,3 @@
-//Выпадающее меню
 $(document).ready(function(){ 
 // Выпадающее меню
 	$('.header_bottomMenu__dropdownMenu').on( 'click', function() {
@@ -62,7 +61,6 @@ $(document).ready(function(){
 		$('.searchForm_noSearchResult').removeClass('visible');
 		$('.basket_fullBasket').removeClass('visible');
 		$('.basket_emptyBasket').removeClass('visible');
-		$('.page').removeClass('noScroll');
 		$('.subscribe_thanks').removeClass('visible');
 		$('.header_bottomMenu__basket').removeClass('active');
 		$('.header_bottomMenu__dropdownMenu').removeClass('open');

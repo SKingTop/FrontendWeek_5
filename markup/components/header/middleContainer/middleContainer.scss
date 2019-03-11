@@ -52,7 +52,7 @@
 		}
 	}
 	&__email {
-		min-width: 195px;
+		max-width: 195px;
 		box-sizing: border-box;
 		position: relative;
 		padding-left: 54px;
@@ -94,6 +94,30 @@
 					color: $middleContainerTextColorHover;
 				}
 			}
+		}
+	}
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.header_middleContainer {
+		width: 1024px;
+		justify-content: space-around;
+		padding-bottom: 15px;
+	}
+	.header_info	{
+		width: 750px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		&__time, &__map, &__email, &__phone {
+			max-width: 50%;
+			width: 23%;
+			font-size: 15px;
+			&__icon {
+				left: 5px;
+			}
+		}
+		&__map {
+			padding-left: 55px;
 		}
 	}
 }

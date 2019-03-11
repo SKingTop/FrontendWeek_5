@@ -6,8 +6,6 @@
 		display: none;
 		width: 566px;
 		height: 131px;
-		margin-top: 55px;
-		margin-left: 15px;
 		background-color: $searchFormNoSearchResult;
 		position: relative;
 		overflow: hidden;
@@ -44,6 +42,14 @@
 			position: absolute;
 			right: -12px;
 			top: 9px;
+		}
+	}
+}
+@media (max-width: 1359px) {
+	.searchForm_noSearchResult {
+		width: 459px;
+		&__text {
+			font-size: 15px;
 		}
 	}
 }

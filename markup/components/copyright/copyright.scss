@@ -39,3 +39,15 @@
 		}
 	}
 }
+// Media until 1359px
+@media (max-width: 1359px) {
+	.copyright {
+		width: 1024px;
+		&_text {
+			font-size: 14px;
+		}
+		&_author__text {
+			font-size: 14px;
+		}
+	}
+}

@@ -100,6 +100,7 @@
 		min-height: 90px;
 		height: auto;
 		box-sizing: border-box;
+		padding-bottom: 10px;
 		border-bottom: 1px solid $mainContainerArticlesContainerItemBorder;
 		&__link {
 			display: block;
@@ -215,5 +216,52 @@
 		background-color: $paleSelectorLinkActiveBackground;
 		color: $paleSelectorLinkActive;
 		text-decoration: none;
+	}
+}
+@media (max-width: 1359px) {
+	.mainContainer {
+		&_text {
+			font-size: 15px;
+		}
+		&_h1 {
+			font-size: 35px;
+		}
+		width: 1024px;
+		&_blogsContainer {
+			margin: 0px auto;
+		}
+		&_articlesContainer {
+			position: static;
+			width: 950px;
+			margin: 0px auto;
+			margin-top: 20px;
+			&__text {
+				font-size: 22px;
+			}
+			&_item__text {
+				font-size: 16px;
+			}
+			&_item__link {
+				font-size: 18px;
+			}
+		}
+	}
+	.articlesContainer_link {
+		margin: 0px auto;
+		margin-top: 50px;
+	}
+	.pageSelector {
+		margin: 0px auto;
+	}
+	.blogsContainer_item__content {
+		&__date {
+			font-size: 14px;
+		}
+		&__link {
+			font-size: 18px;
+		}
+		&__text {
+			font-size: 16px;
+		}
 	}
 }

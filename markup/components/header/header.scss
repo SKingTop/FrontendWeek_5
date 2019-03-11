@@ -2,11 +2,10 @@
 	width: 100%;
 	min-height: 170px;
 }
-.blur {
+.blur, .blurLV2 {
 	display: none;
 }
-.blur.visible {
-	z-index: 50;
+.blur.visible, .blurLV2.visible {
 	display: block;
 	overflow: hidden;
 	width: 100%;
@@ -15,4 +14,16 @@
 	left: 0px;
 	top: 0px;
 	background-color: $blur;
+}
+.blur {
+	z-index: 100;
+}
+.blur.LV2 {
+	z-index: 1000;
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	// .header {
+	// 	width: 1024px;
+	// }
 }

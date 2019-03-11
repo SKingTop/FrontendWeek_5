@@ -133,3 +133,26 @@
 		}
 	}
 }
+// Media until 1359px
+@media (max-width: 1359px) {
+	.footer {
+		width: 1024px;
+	}
+	.footer_logo__privacyPolicy {
+		font-size: 12px;
+	}
+	.footer_menu__item, .footer_content__item {
+		font-size: 14px;
+	}
+	.footer_contacts {
+		&__mail {
+			font-size: 14px;
+		}
+		&__phone__item {
+			font-size: 14px;
+		}
+		&__time__text {
+			font-size: 14px;
+		}
+	}
+}

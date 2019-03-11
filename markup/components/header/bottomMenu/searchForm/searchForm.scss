@@ -1,3 +1,10 @@
+.searchForm {
+	box-sizing: border-box;
+	width: 722px;
+	height: 55px;
+	padding-top: 55px;
+	padding-left: 15px;
+}
 .header_bottomMenu__searchForm {
 		width: 772px;
 		height: 100%;
@@ -39,5 +46,22 @@
 		position: absolute;
 		top: 18px;
 		left: 38px;
+	}
+}
+// Media until 1359px
+@media (max-width: 1359px) {
+	.header_bottomMenu__searchForm {
+		width: 609px;
+	}
+	.searchForm {
+		width: 579px;
+		font-size: 15px;
+		&_textArea {
+			width: 459px;
+		}
+		&_submitBtn {
+			width: 120px;
+			font-size: 15px;
+		}
 	}
 }

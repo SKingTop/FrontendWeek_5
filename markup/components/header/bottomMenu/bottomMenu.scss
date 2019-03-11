@@ -12,3 +12,9 @@
 	display: flex;
 	flex-direction: row;
 }
+// Media until 1359px
+@media (max-width: 1359px) {
+	.header_bottomMenu {
+		width: 1024px;
+	}
+}
