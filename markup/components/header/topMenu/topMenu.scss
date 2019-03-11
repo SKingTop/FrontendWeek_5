@@ -74,3 +74,39 @@
 		font-size: 15px;
 	}
 }
+@media (max-width: 1023px) {
+	.header_topMenu {
+		width: 768px;
+		font-size: 14px;
+		flex-direction: column;
+	}
+	.topMenu__siteMenu  {
+		width: 300px;
+	}
+	.topMenu__userMenu  {
+		width: 270px;
+	}
+}
+@media (max-width: 767px) {
+	.header_topMenu {
+		width: 600px;
+		font-size: 12px;
+		flex-direction: column;
+	}
+	.topMenu__siteMenu  {
+		width: 270px;
+	}
+	.topMenu__userMenu  {
+		width: 230px;
+	}
+	.userMenu__item .favorites__img {
+		width: 15px;
+		top: 12px;
+		left: 5px;
+	}
+	.userMenu__item .personalOffice__img {
+		width: 15px;
+		top: 11px;
+		left: 11px;
+	}
+}

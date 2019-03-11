@@ -80,3 +80,29 @@
 		}
 	}
 }
+@media (max-width: 1023px) {
+	.searchForm_searchResults {
+		width: 300px;
+		height: 351px;
+	}
+	.searchResults_container {
+		width: 300px;
+		height: 273px;
+		&__item__text {
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.searchForm_searchResults {
+		width: 540px;
+		height: 351px;
+	}
+	.searchResults_container {
+		width: 540px;
+		height: 273px;
+		&__item__text {
+			font-size: 14px;
+		}
+	}
+}

@@ -162,3 +162,45 @@
 		height: 243px;
 	}
 }
+@media (max-width: 1023px) {
+	.basket_fullBasket {
+		width: 466px;
+		height: 403px;
+	}
+	.fullBasket_container__item {
+		&__product {
+			width: 291px;
+		}	
+	}
+	.product__name {
+		width: 291px;
+		font-size: 15px;
+	}
+	.fullBasket_container {
+		height: 243px;
+	}
+	.fullBasket_link  {
+		width: 170px;
+	}
+	.fullBasket_totalCount, .fullBasket_text {
+		font-size: 15px;
+	}
+	.fullBasket_container__item__price .price_currentPrice .currentPrice {
+		font-size: 18px;
+	}
+	.fullBasket_container__item.sale .price_currentPrice .currentPrice {
+		font-size: 18px;
+	}
+}
+@media (max-width: 767px) {
+	.basket_fullBasket {
+		width: 540px;
+		float: none;
+		margin-left: -235px;
+	}
+	.fullBasket_container__item {
+		&__product {
+			width: 355px;
+		}	
+	}
+}

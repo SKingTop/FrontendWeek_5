@@ -18,3 +18,19 @@
 		width: 1024px;
 	}
 }
+@media (max-width: 1023px) {
+	.header_bottomMenu {
+		width: 768px;
+	}
+}
+@media (max-width: 767px) {
+	.header_bottomMenuBackground {
+		height: 110px;
+	}
+	.header_bottomMenu {
+		padding: 0;
+		padding-top: 5px;
+		width: 540px;
+		position: relative;
+	}
+}

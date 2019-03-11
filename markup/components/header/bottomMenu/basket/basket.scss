@@ -63,3 +63,24 @@
 		}
 	}
 }
+@media (max-width: 1023px) {
+	.header_bottomMenu__basket__text {
+		font-size: 14px;
+	}
+	.basket__basketIndicator {
+		width: 12px;
+		height: 12px;
+		line-height: 12px;
+		font-size: 10px;
+		top: 10px;
+	}
+}
+@media (max-width: 767px) {
+	.header_bottomMenu__basket {
+		width: 180px;
+		height: 55px;
+		position: absolute;
+		top: 5px;
+		right: 180px;
+	}
+}

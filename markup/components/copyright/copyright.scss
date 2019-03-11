@@ -51,3 +51,25 @@
 		}
 	}
 }
+@media (max-width: 1023px) {
+	.copyright {
+		width: 768px;
+		&_text {
+			font-size: 12px;
+		}
+		&_author__text {
+			font-size: 12px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.copyright {
+		width: 600px;
+		&_text {
+			font-size: 11px;
+		}
+		&_author__text {
+			font-size: 11px;
+		}
+	}
+}

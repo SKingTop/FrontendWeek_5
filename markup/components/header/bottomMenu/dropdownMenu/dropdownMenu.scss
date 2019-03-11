@@ -98,3 +98,44 @@
 		width: 210px;
 	}
 }
+@media (max-width: 1023px) {
+	.header_bottomMenu__dropdownMenu {
+		width: 150px;
+		padding-left: 25px;
+	}
+	.dropdownMenu {
+		&__humbergerIco {
+			max-width: 15px;
+			top: 22px;
+			left: 7px;
+		}
+		&__text {
+			width: 125px;
+			font-size: 14px;
+		}
+	}
+	.arrowDownIco {
+		right: 7px;
+		max-width: 10px;
+	}
+	.dropdownMenu_container {
+		width: 150px;
+	}
+}
+@media (max-width: 767px) {
+	.header_bottomMenu__dropdownMenu {
+		width: 180px;
+		height: 55px;
+		padding-left: 35px;
+		z-index: 600;
+	}
+	.dropdownMenu__humbergerIco {
+			left: 10px;
+		}
+	.arrowDownIco {
+		right: 10px;
+	}
+	.dropdownMenu_container {
+		width: 180px;
+	}
+}

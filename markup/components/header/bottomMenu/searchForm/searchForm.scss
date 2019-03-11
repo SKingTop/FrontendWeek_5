@@ -65,3 +65,41 @@
 		}
 	}
 }
+@media (max-width: 1023px) {
+	.header_bottomMenu__searchForm {
+		width: 450px;
+	}
+	.searchForm {
+		width: 429px;
+		font-size: 14px;
+		&_textArea {
+			width: 300px;
+		}
+		&_submitBtn {
+			width: 99px;
+			font-size: 14px;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.header_bottomMenu__searchForm {
+		height: 55px;
+		width: 540px;
+		position: absolute;
+		left: -15px;
+		bottom: 0px;
+	}
+	.searchForm {
+		width: 540px;
+		&_textArea {
+			width: 540px;
+		}
+		&_submitBtn {
+			width: 180px;
+			height: 55px;
+			top: -50px;
+			right: -15px;
+			font-size: 14px;
+		}
+	}
+}

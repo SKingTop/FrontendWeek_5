@@ -220,13 +220,13 @@
 }
 @media (max-width: 1359px) {
 	.mainContainer {
+		width: 1024px;
 		&_text {
 			font-size: 15px;
 		}
 		&_h1 {
 			font-size: 35px;
 		}
-		width: 1024px;
 		&_blogsContainer {
 			margin: 0px auto;
 		}
@@ -235,15 +235,17 @@
 			width: 950px;
 			margin: 0px auto;
 			margin-top: 20px;
-			&__text {
-				font-size: 22px;
-			}
-			&_item__text {
-				font-size: 16px;
-			}
-			&_item__link {
-				font-size: 18px;
-			}
+		}
+	}
+	.articlesContainer {
+		&__text {
+			font-size: 22px;
+		}
+		&_item__text {
+			font-size: 16px;
+		}
+		&_item__link {
+			font-size: 18px;
 		}
 	}
 	.articlesContainer_link {
@@ -263,5 +265,116 @@
 		&__text {
 			font-size: 16px;
 		}
+	}
+}
+@media (max-width: 1023px) {
+	.mainContainer {
+		width: 768px;
+		&_text {
+			font-size: 14px;
+		}
+		&_h1 {
+			font-size: 30px;
+		}
+		&_articlesContainer {
+			width: 708px;
+		}
+	}
+	.articlesContainer {
+		&__text {
+			font-size: 20px;
+		}
+		&_item__text {
+			font-size: 14px;
+		}
+		&_item__link {
+			font-size: 16px;
+		}
+	}
+	.blogsContainer_item__content {
+		&__date {
+			font-size: 14px;
+		}
+		&__link {
+			font-size: 18px;
+		}
+		&__text {
+			font-size: 16px;
+		}
+	}
+	.mainContainer_blogsContainer {
+		width: 708px;
+	}
+	.pageSelector {
+		width: 708px;
+	}
+}
+@media (max-width: 767px) {
+	.mainContainer {
+		width: 600px;
+		&_text {
+			font-size: 14px;
+		}
+		&_h1 {
+			font-size: 30px;
+		}
+		&_articlesContainer {
+			width: 540px;
+		}
+	}
+	.articlesContainer {
+		&__text {
+			font-size: 19px;
+		}
+		&_item__text {
+			font-size: 13px;
+		}
+		&_item__link {
+			font-size: 15px;
+		}
+	}
+	.blogsContainer_item__content {
+		&__date {
+			font-size: 13px;
+		}
+		&__link {
+			font-size: 17px;
+		}
+		&__text {
+			font-size: 15px;
+		}
+	}
+	.mainContainer_blogsContainer {
+		width: 540px;
+	}
+	.pageSelector {
+		width: 540px;
+	}
+	.pageSelector_container {
+		width: 500px;
+		position: relative;
+		.pages {
+			display: flex;
+			justify-content: space-between;
+			min-width: 500px;
+			&_item {
+				padding: 2.5px 10px;
+			}
+		}
+		.page_prev {
+			position: absolute;
+			top: 50px;
+			left: 0;
+		}
+		.page_next {
+			top: 50px;
+			right: 130px;
+			&__icon {
+				right: 25px;
+			}
+		}
+	}
+	.blogsContainer_item__img img {
+		height: 100%;
 	}
 }

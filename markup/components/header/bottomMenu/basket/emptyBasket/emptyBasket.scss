@@ -50,3 +50,15 @@
 		width: 566px;
 	}
 }
+@media (max-width: 1023px) {
+	.basket_emptyBasket {
+		width: 466px;
+	}
+}
+@media (max-width: 767px) {
+	.basket_emptyBasket {
+		width: 540px;
+		float: none;
+		margin-left: -235px;
+	}
+}
