@@ -84,3 +84,31 @@
 		right: 180px;
 	}
 }
+@media (max-width: 599px) {
+	.header_bottomMenu__basket {
+		width: 460px;
+		height: 55px;
+		position: absolute;
+		padding-left: 200px;
+		top: 110px;
+		right: 0px;
+	}
+	.basket__bascetIco {
+		left: 165px;
+	}
+	.basket__basketIndicator {
+		left: 177px;
+	}
+}
+@media (max-width: 479px) {
+	.header_bottomMenu__basket {
+		width: 300px;
+		padding-left: 125px;
+	}
+	.basket__bascetIco {
+		left: 90px;
+	}
+	.basket__basketIndicator {
+		left: 102px;
+	}
+}

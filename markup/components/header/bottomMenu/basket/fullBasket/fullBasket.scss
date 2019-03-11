@@ -204,3 +204,25 @@
 		}	
 	}
 }
+@media (max-width: 599px) {
+	.basket_fullBasket {
+		width: 460px;
+		margin-left: -200px;
+	}
+}
+@media (max-width: 479px) {
+	.basket_fullBasket {
+		width: 300px;
+		height: 460px;
+		margin-left: -125px;
+	}
+	.fullBasket_container__item {
+		&__product {
+			width: 150px;
+		}
+	}	
+	.product__name {
+		width: 150px;
+		font-size: 13px;
+	}
+}

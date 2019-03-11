@@ -106,3 +106,19 @@
 		}
 	}
 }
+@media (max-width: 599px) {
+	.searchForm_searchResults {
+		width: 460px;
+	}
+	.searchResults_container {
+		width: 460px;
+	}
+}
+@media (max-width: 479px) {
+	.searchForm_searchResults {
+		width: 300px;
+	}
+	.searchResults_container {
+		width: 300px;
+	}
+}

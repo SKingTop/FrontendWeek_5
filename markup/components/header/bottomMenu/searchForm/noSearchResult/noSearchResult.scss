@@ -69,3 +69,13 @@
 		}
 	}
 }
+@media (max-width: 599px) {
+	.searchForm_noSearchResult {
+		width: 460px;
+	}
+}
+@media (max-width: 479px) {
+	.searchForm_noSearchResult {
+		width: 300px;
+	}
+}

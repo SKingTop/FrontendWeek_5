@@ -103,3 +103,37 @@
 		}
 	}
 }
+@media (max-width: 599px) {
+	.header_bottomMenu__searchForm {
+		width: 480px;
+		left: -15px;
+		bottom: 55px;
+		z-index: 600;
+	}
+	.searchForm {
+		width: 480px;
+		&_textArea {
+			width: 460px;
+		}
+		&_submitBtn {
+			width: 220px;
+			top: -55px;
+			right: 5px;
+		}
+	}
+}
+@media (max-width: 479px) {
+	.header_bottomMenu__searchForm {
+		width: 300px;
+	}
+	.searchForm {
+		width: 300px;
+		&_textArea {
+			width: 300px;
+		}
+		&_submitBtn {
+			width: 115px;
+			right: -15px;
+		}
+	}
+}

@@ -86,3 +86,35 @@
 		margin-left: 120px;
 	}
 }
+@media (max-width: 599px) {
+	.deleteFromBasket  {
+		width: 400px;
+		height: 227px;
+		left: calc(50% - 200px);
+		&_delete {
+			margin-left: 30px;
+		}
+	}
+	.deleteFromBasket_content__h2 {
+		margin-left: 60px;
+	}
+}
+@media (max-width: 479px) {
+	.deleteFromBasket  {
+		width: 300px;
+		height: 227px;
+		left: calc(50% - 150px);
+		&_delete {
+			width: 100px;
+			margin-left: 45px;
+		}
+		&_cancel {
+			width: 100px;
+		}
+	}
+	.deleteFromBasket_content__h2 {
+		margin-left: 40px;
+		font-size: 30px;
+		padding-top: 55px;
+	}
+}

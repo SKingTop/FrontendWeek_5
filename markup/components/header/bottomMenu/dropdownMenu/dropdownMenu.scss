@@ -139,3 +139,29 @@
 		width: 180px;
 	}
 }
+@media (max-width: 599px) {
+	.header_bottomMenu__dropdownMenu {
+		width: 220px;
+		padding-left: 45px;
+		z-index: 800;
+	}
+	.dropdownMenu__humbergerIco {
+			left: 20px;
+		}
+	.dropdownMenu_container {
+		width: 220px;
+	}
+}
+@media (max-width: 479px) {
+	.header_bottomMenu__dropdownMenu {
+		width: 175px;
+		padding-left: 35px;
+		z-index: 800;
+	}
+	.dropdownMenu__humbergerIco {
+			left: 10px;
+		}
+	.dropdownMenu_container {
+		width: 175px;
+	}
+}

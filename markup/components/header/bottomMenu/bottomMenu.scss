@@ -34,3 +34,16 @@
 		position: relative;
 	}
 }
+@media (max-width: 599px) {
+	.header_bottomMenuBackground {
+		height: 170px;
+	}
+	.header_bottomMenu {
+		width: 460px;
+	}
+}
+@media (max-width: 479px) {
+	.header_bottomMenu {
+		width: 300px;
+	}
+}

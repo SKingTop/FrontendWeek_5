@@ -73,3 +73,31 @@
 		}
 	}
 }
+@media (max-width: 599px) {
+	.copyright {
+		width: 460px;
+		&_text {
+			font-size: 11px;
+		}
+		&_author__text {
+			font-size: 11px;
+		}
+	}
+}
+@media (max-width: 479px) {
+	.copyright {
+		width: 300px;
+		height: 82px;
+		box-sizing: border-box;
+		padding-bottom: 5px;
+		flex-direction: column;
+		justify-content: space-around;
+		&_text {
+			font-size: 11px;
+		}
+		&_author__text {
+			width: 73px;
+			font-size: 11px;
+		}
+	}
+}

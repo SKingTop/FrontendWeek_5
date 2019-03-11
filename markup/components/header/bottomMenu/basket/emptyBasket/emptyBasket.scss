@@ -62,3 +62,15 @@
 		margin-left: -235px;
 	}
 }
+@media (max-width: 599px) {
+	.basket_emptyBasket {
+		width: 460px;
+		margin-left: -200px;
+	}
+}
+@media (max-width: 479px) {
+	.basket_emptyBasket {
+		width: 300px;
+		margin-left: -125px;
+	}
+}

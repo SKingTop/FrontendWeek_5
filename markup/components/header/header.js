@@ -65,4 +65,9 @@ $(document).ready(function(){
 		$('.header_bottomMenu__basket').removeClass('active');
 		$('.header_bottomMenu__dropdownMenu').removeClass('open');
 	}
+//Гамбургер открытие/закрытие меню
+	$('.header_hamburgerMenu').on( 'click', function() {
+		$(this).toggleClass('open');
+		$('.header_topMenuBackgound').toggleClass('open');
+	});
 });
